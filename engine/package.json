@@ -1,0 +1,14 @@
+{
+  "name": "wl-engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Amedeo Zucchetti",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^3.0.2",
+    "fs-extra": "^8.1.0",
+    "glob": "^8.0.3",
+    "globby": "^13.1.2"
+  },
+  "type": "module"
+}
