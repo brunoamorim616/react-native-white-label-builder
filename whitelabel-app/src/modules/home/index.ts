@@ -1,9 +1,9 @@
-import {Catalog} from './Catalog';
+import {Home} from './Home';
 
 const moduleConfig = {
-  id: 'catalog',
-  title: 'Catalog',
-  component: Catalog,
+  id: 'home',
+  title: 'Home',
+  component: Home,
 };
 
 export default moduleConfig;

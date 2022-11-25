@@ -2,16 +2,14 @@ import React from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
 import Routes from './routes';
-import {NativeBaseProvider} from 'native-base';
+import {Provider} from 'react-native-paper';
 
-function App() {
+export default function App() {
   return (
-    <NativeBaseProvider>
+    <Provider>
       <NavigationContainer>
         <Routes />
       </NavigationContainer>
-    </NativeBaseProvider>
+    </Provider>
   );
 }
-
-export default App;
