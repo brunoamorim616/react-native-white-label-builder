@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
-import Routes from './routes';
 import {Provider} from 'react-native-paper';
+import Routes from './routes';
+import Auth from './authentication';
 
 export default function App() {
+  const [auth, setAuth] = useState(false);
+
   return (
     <Provider>
-      <NavigationContainer>
-        <Routes />
-      </NavigationContainer>
+      <NavigationContainer>{!auth ? <Auth /> : <Routes />}</NavigationContainer>
     </Provider>
   );
 }

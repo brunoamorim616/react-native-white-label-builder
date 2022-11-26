@@ -3,11 +3,10 @@ import React from 'react';
 import {
   createDrawerNavigator,
   DrawerNavigationOptions,
-  DrawerScreenProps,
 } from '@react-navigation/drawer';
 
-import modules from '../../modules';
 import {useId} from 'react';
+import modules from '../../modules';
 
 const DrawerMenuNavigator = createDrawerNavigator();
 
