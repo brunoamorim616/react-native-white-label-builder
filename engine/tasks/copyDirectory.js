@@ -1,6 +1,7 @@
 import fs from "fs-extra";
-const { removeSync, copySync } = fs;
 import glb from "glob";
+
+const { removeSync, copySync } = fs;
 const { sync } = glb;
 
 const copyDirectory = (dirSrc, dirDst) => {

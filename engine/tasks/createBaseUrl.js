@@ -1,4 +1,5 @@
 import fs from "fs-extra";
+
 const { writeFileSync } = fs;
 
 const createBaseUrl = (dirDst, baseUrl) => {
