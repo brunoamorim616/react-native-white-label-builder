@@ -1,10 +1,10 @@
-import {DrawerMenu} from './DrawerMenu';
+import {DrawerMenuRouter} from './DrawerMenuRouter';
 
 const navigatorConfig = {
   id: 'drawerMenu',
   name: 'DrawerMenu',
-  navigatorComponent: {
-    DrawerMenu: DrawerMenu,
+  router: {
+    DrawerMenuRouter: DrawerMenuRouter,
   },
 };
 

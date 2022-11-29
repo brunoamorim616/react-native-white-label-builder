@@ -1,10 +1,10 @@
-import {Auth} from './Auth';
+import {AuthRouter} from './AuthRouter';
 
 const navigatorConfig = {
   id: 'auth',
   name: 'Auth',
-  navigatorComponent: {
-    Auth: Auth,
+  router: {
+    AuthRouter: AuthRouter,
   },
 };
 

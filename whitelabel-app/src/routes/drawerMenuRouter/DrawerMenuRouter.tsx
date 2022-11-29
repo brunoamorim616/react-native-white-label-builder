@@ -1,25 +1,19 @@
 import React from 'react';
 
-import {
-  createDrawerNavigator,
-  DrawerNavigationOptions,
-} from '@react-navigation/drawer';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import {useId} from 'react';
 import modules from '../../modules';
 
 const DrawerMenuNavigator = createDrawerNavigator();
 
-const defaultScreenOptions: DrawerNavigationOptions = {};
-
-export function DrawerMenu() {
+export function DrawerMenuRouter() {
   const navigatorKey = useId();
   return (
     <DrawerMenuNavigator.Navigator
       key={navigatorKey}
       defaultStatus="closed"
-      initialRouteName={modules[0].title}
-      defaultScreenOptions={defaultScreenOptions}>
+      initialRouteName={modules[0].title}>
       {modules.map(module => (
         <DrawerMenuNavigator.Screen
           key={module.id}

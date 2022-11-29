@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {Provider} from 'react-native-paper';
 import Routes from './routes';
-import Auth from './authentication';
+import Auth from './modules/authentication';
 
 export default function App() {
   const [auth, setAuth] = useState(false);

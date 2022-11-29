@@ -1,3 +1,3 @@
-import drawerMenu from './drawerMenu';
+import drawerMenu from './drawerMenuRouter';
 
-export default drawerMenu.navigatorComponent.DrawerMenu;
+export default drawerMenu.router.DrawerMenuRouter;

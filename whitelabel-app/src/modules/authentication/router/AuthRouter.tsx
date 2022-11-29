@@ -5,7 +5,7 @@ import modules from '../modules';
 
 const AuthNavigator = createNativeStackNavigator();
 
-export function Auth() {
+export function AuthRouter() {
   return (
     <AuthNavigator.Navigator>
       {modules.map(module => (
