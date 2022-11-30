@@ -13,11 +13,11 @@ import Auth from './modules/authentication';
 function Root() {
   const auth = false;
 
-  if (auth) return <Routes />;
-  else return <Auth />;
+  // if (auth) return <Routes />;
+  // else return <Auth />;
 }
 
-export default function App() {
+export function App() {
   const osColorScheme = useColorScheme();
 
   const appTheme = useMemo(() => {
@@ -27,9 +27,7 @@ export default function App() {
 
   return (
     <NavigationContainer key="app-navigation-container" theme={appTheme}>
-      <Provider key="papaer-provider">
-        <Root key="app-root" />
-      </Provider>
+      <Provider key="papaer-provider">{/* <Root key="app-root" /> */}</Provider>
     </NavigationContainer>
   );
 }

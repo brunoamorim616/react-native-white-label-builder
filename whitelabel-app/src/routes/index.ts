@@ -1,3 +1,4 @@
 import drawerMenu from './drawerMenuRouter';
+import bottomMenuRouter from './bottomMenuRouter';
 
-export default drawerMenu.router.DrawerMenuRouter;
+export default bottomMenuRouter.router.BottomMenuRouter;
