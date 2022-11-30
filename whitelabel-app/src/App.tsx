@@ -1,33 +1,29 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 
-import {
-  DarkTheme,
-  DefaultTheme,
-  NavigationContainer,
-} from '@react-navigation/native';
-import {Provider} from 'react-native-paper';
-import {useColorScheme} from 'react-native';
+import {ActivityIndicator} from 'react-native-paper';
+import {StyleSheet, View} from 'react-native';
 import Routes from './routes';
 import Auth from './modules/authentication';
-
-function Root() {
-  const auth = false;
-
-  // if (auth) return <Routes />;
-  // else return <Auth />;
-}
+import {useAuth} from './contexts/AuthContext';
 
 export function App() {
-  const osColorScheme = useColorScheme();
+  const {signed, loading} = useAuth();
 
-  const appTheme = useMemo(() => {
-    if (osColorScheme === 'dark') return DarkTheme;
-    else return DefaultTheme;
-  }, [osColorScheme]);
+  if (loading)
+    return (
+      <View style={styles.container}>
+        <ActivityIndicator />
+      </View>
+    );
 
-  return (
-    <NavigationContainer key="app-navigation-container" theme={appTheme}>
-      <Provider key="papaer-provider">{/* <Root key="app-root" /> */}</Provider>
-    </NavigationContainer>
-  );
+  if (signed) return <Routes />;
+  else return <Auth />;
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
