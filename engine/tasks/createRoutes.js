@@ -12,4 +12,4 @@ export default [${modules.join(", ")}];
   writeFileSync(`${dirDst}/src/modules/index.ts`, fileContent);
 };
 
-export default createModules;
+export default createRoutes;

@@ -1,15 +1,12 @@
 {
-	"id": "br.com.whitelabel",
-	"name": "Whitelabel",
-	"theme": "light",
-	"baseUrl": "http://localhost:6900",
-	"modules": [
-		"catalog",
-		"cart"
-	],
-	"router": {
-		"name": "DrawerMenu",
-		"type": "drawerMenu"
-	},
-	"iconsPath": "./icons"
+  "id": "br.com.whitelabel",
+  "name": "Whitelabel",
+  "theme": "light",
+  "baseUrl": "http://localhost:6900",
+  "modules": ["catalog", "cart"],
+  "router": {
+    "name": "DrawerMenu",
+    "type": "drawerMenu"
+  },
+  "iconsPath": "./icons"
 }

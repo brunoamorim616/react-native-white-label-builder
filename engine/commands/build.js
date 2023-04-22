@@ -1,4 +1,4 @@
-import createRouting from "../../wl-engine/tasks/createRouting.js";
+import createRouting from "../tasks/createRoutes.js";
 import copyDirectory from "../tasks/copyDirectory.js";
 import createBaseUrl from "../tasks/createBaseUrl.js";
 import createModules from "../tasks/createModules.js";
