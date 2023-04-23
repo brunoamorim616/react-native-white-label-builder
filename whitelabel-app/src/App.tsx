@@ -2,7 +2,7 @@ import React from 'react';
 
 import {ActivityIndicator} from 'react-native-paper';
 import {StyleSheet, View} from 'react-native';
-import Routes from './routes';
+import Navigator from './navigation';
 import Auth from './modules/authentication';
 import {useAuth} from './contexts/AuthContext';
 
@@ -16,7 +16,7 @@ export function App() {
       </View>
     );
 
-  if (signed) return <Routes />;
+  if (signed) return <Navigator />;
   else return <Auth />;
 }
 

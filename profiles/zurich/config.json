@@ -1,8 +1,0 @@
-{
-	"id": "ch.visit.zurich",
-	"name": "Visit Zurich",
-	"theme": "dark",
-	"baseUrl": "http://localhost:8000",
-	"modules": ["events", "museums", "transports"],
-	"iconsPath": "./icons"
-}
