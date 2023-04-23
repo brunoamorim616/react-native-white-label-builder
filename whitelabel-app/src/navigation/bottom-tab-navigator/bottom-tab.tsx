@@ -4,21 +4,21 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import modules from '../../modules';
 
-const BottomMenuNavigator = createBottomTabNavigator();
+const BottomTabNavigator = createBottomTabNavigator();
 
-export function BottomMenuRouter() {
+export function BottomTab() {
   const navigatorKey = useId();
   return (
-    <BottomMenuNavigator.Navigator
+    <BottomTabNavigator.Navigator
       key={navigatorKey}
       initialRouteName={modules[0].title}>
       {modules.map(module => (
-        <BottomMenuNavigator.Screen
+        <BottomTabNavigator.Screen
           key={module.id}
           name={module.title}
           component={module.component}
         />
       ))}
-    </BottomMenuNavigator.Navigator>
+    </BottomTabNavigator.Navigator>
   );
 }
