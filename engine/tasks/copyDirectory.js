@@ -10,7 +10,10 @@ const copyDirectory = (dirSrc, dirDst) => {
   const files = sync(`${dirSrc}/**/*`, {
     dot: true,
   });
-  files.forEach((file) => copySync(file, file.replace(dirSrc, dirDst)));
+  files.forEach((file) => {
+    console.log(file);
+    copySync(file, file.replace(dirSrc, dirDst));
+  });
 };
 
 export default copyDirectory;
