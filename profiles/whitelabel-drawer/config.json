@@ -4,9 +4,6 @@
   "theme": "light",
   "baseUrl": "http://localhost:6900",
   "modules": ["catalog", "cart"],
-  "router": {
-    "name": "DrawerMenu",
-    "type": "drawerMenu"
-  },
+  "navigation": "drawer-navigator",
   "iconsPath": "./icons"
 }
